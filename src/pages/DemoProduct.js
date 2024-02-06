@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
-import axios from 'axios';
 import emailjs from 'emailjs-com';
-import Notiflix from 'notiflix';
 
 const DemoProduct = (props) => {
 
@@ -70,6 +68,11 @@ const DemoProduct = (props) => {
                             <div className="flex">
                                 <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">Demo our products</h1>
                             </div>
+                            {isSuccess && (
+                                <div className='text-green-500 font-semibold'>
+                                Email sent successfully!
+                                </div>
+                            )}
                             <div className="flex items-center my-4">
                                 <input 
                                     id="checkbox-1" 

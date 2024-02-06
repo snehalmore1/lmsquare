@@ -2,9 +2,7 @@ import React, { useState ,useRef} from 'react';
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
-import axios from 'axios';
 import emailjs from 'emailjs-com';
-import Notiflix from 'notiflix';
 const Contact = () => {
     useDocTitle('LM^2|Send us a message')
     const [firstName, setFirstName] = useState('')
@@ -33,7 +31,7 @@ const Contact = () => {
     const pbID=process.env.REACT_APP_PUBLIC_KEY;
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm(svID, tmID, e.target, pbID)
+        emailjs.sendForm(svID, tmID, form.current, pbID)
           .then((result) => {
               console.log(result.text);
               setIsSuccess(true);
@@ -51,7 +49,7 @@ const Contact = () => {
             <div id='contact' className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24 ">
                 <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
 
-                <form onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail}>
 
                     <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                         <div className="flex">
