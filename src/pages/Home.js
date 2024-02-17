@@ -6,16 +6,16 @@ import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
-
+import AboutUs from '../components/AboutUs';
 
 const Home = () => {
     return (
         <>
             <Hero />
-            <Intro />
+            <AboutUs />
             <Services />
             <Portfolio />
-            <Clients />
+            {/* <Clients /> */}
             <Cta/>
             <Footer />
         </>

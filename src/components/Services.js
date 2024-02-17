@@ -64,53 +64,7 @@ const Services = () => {
                     </div>
             </section>
 
-            <section>
-                <div className="m-auto max-w-6xl p-2 md:p-12 h-5/6">
-                    <div className="flex flex-col py-8 lg:flex-row justify-between lg:text-left" data-aos="zoom-out">
-                    <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-                        <div className='text-blue-900 mb-4'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'>
-                            {/* SVG path for "Learn" */}
-                        </svg>
-                        </div>
-                        <h3 className="text-3xl text-blue-900 font-bold">We <span className='font-black'>Learn</span></h3>
-                        <div>
-                        <p className='my-3 text-xl text-gray-600 font-semibold'>
-                            Our Team is always updated with the latest technologies, processes, and trends in the market. This helps us understand and provide robust solutions to any kind of problems for our customers. We believe in experimenting through learning as it's a never-ending process.
-                        </p>
-                        </div>
-                    </div>
-
-                    <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-                        <div className='text-blue-900 mb-4'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'>
-                            {/* SVG path for "Make" */}
-                        </svg>
-                        </div>
-                        <h3 className="text-3xl text-blue-900 font-bold">We <span className='font-black'>Make</span></h3>
-                        <div>
-                        <p className='my-3 text-xl text-gray-600 font-semibold'>
-                            With over many years of experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
-                        </p>
-                        </div>
-                    </div>
-
-                    <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-                        <div className='text-blue-900 mb-4'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'>
-                            {/* SVG path for "Modify" */}
-                        </svg>
-                        </div>
-                        <h3 className="text-3xl text-blue-900 font-bold">We <span className='font-black'>Modify</span></h3>
-                        <div>
-                        <p className='my-3 text-xl text-gray-600 font-semibold'>
-                            With over many years of experience in software analysis and design and a deep understanding of the latest IT trends and solutions, we provide customized recommendations and strategies to help you improve your operations, reduce costs, and increase efficiency.
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </section>
+            
         </div>
     )
 }

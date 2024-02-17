@@ -57,7 +57,7 @@ const Contact = () => {
                         </div>
                         {isSuccess && (
                                 <div className='text-green-500 font-semibold'>
-                                Email sent successfully!
+                                Email sent successfully! Our team will contact you shortly. 
                                 </div>
                             )}
                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
