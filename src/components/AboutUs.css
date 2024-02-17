@@ -1,0 +1,194 @@
+/* AboutUs.css */
+.about-us-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 3em;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.facts-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fact {
+  text-align: left;
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fact:hover {
+  transform: scale(1.05);
+}
+
+i {
+  font-size: 3em;
+  color: #3498db;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.number {
+  color: #3498db;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+/* AboutUs.css */
+
+.values-section,
+.team-section,
+.technology-section {
+  margin-top: 5vw; /* Adjust as needed */
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 5vw;
+  border-radius: 1vw; /* Adjust as needed */
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+
+.values-section h2,
+.team-section h2,
+.technology-section h2 {
+  color: #3498db;
+  font-size: 2.5em;
+  margin-bottom: 2vw; /* Adjust as needed */
+}
+
+.values-section p,
+.team-section p,
+.technology-section p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 2vw; /* Adjust as needed */
+}
+
+.values-section ul,
+.team-section ul,
+.technology-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values-section ul li,
+.team-section ul li,
+.technology-section ul li {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 1vw; /* Adjust as needed */
+}
+
+.values-section .values-list-item,
+.technology-section .technology-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw; /* Adjust as needed */
+  border-bottom: 1px solid #dcdcdc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.values-section .values-list-item:hover,
+.technology-section .technology-list-item:hover {
+  background-color: #e9f5f9;
+}
+
+.values-section .values-list-item span,
+.technology-section .technology-list-item span {
+  flex: 1;
+}
+
+.values-section .values-list-item i,
+.technology-section .technology-list-item i {
+  font-size: 1.5em;
+  color: #3498db;
+  margin-right: 2vw; /* Adjust as needed */
+}
+
+@media screen and (min-width: 768px) {
+  .facts-grid {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .values-section,
+  .team-section,
+  .technology-section {
+    padding: 5vw 20%; /* Adjust as needed */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .facts-grid {
+    max-width: 1200px;
+  }
+  .values-section,
+  .team-section,
+  .technology-section {
+    padding: 5vw 25%; /* Adjust as needed */
+  }
+}
+
+
+/* AboutUs.css */
+
+.how-we-work-section {
+  text-align: left;
+  margin-top: 5vw; /* Adjust as needed */
+  padding: 5vw; /* Adjust as needed */
+  border-radius: 1vw; /* Adjust as needed */
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+
+.work-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.work-step {
+  flex: 1;
+  max-width: 300px; /* Adjust as needed */
+  margin: 2vw; /* Adjust as needed */
+}
+
+.connector-line {
+  height: 2vw; /* Adjust as needed */
+  width: 2px;
+  background-color: #3498db; /* Connector line color, adjust as needed */
+  margin: 0 auto; /* Center the connector line */
+}
