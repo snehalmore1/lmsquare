@@ -5,37 +5,48 @@ import './AboutUs.css'; // Import your CSS file for styling
 const AboutUs = () => {
   const facts = [
     {
-      icon: 'fas fa-project-diagram',
-      title: 'Innovative Projects Delivered',
-      number: 50,
-      description: 'We have brought to life over 50 innovative projects, exceeding client expectations and setting new industry standards.',
-    },
-    {
       icon: 'fas fa-clock',
       title: 'Dedicated Support Hours',
-      number: 10000,
-      description: 'With 10,000 dedicated support hours, we ensure that our clients receive continuous assistance and seamless experiences.',
+      number: 100,
+      description: 'With 100 dedicated support hours, we ensure that our clients receive continuous assistance and seamless experiences.',
     },
     {
-      icon: 'fas fa-users',
-      title: 'Satisfied Clients Worldwide',
-      number: 30,
-      description: 'Our commitment to excellence has garnered the trust and satisfaction of over 30 clients globally, fostering long-term partnerships.',
+      icon: 'fas fa-code-branch',
+      title: 'Git Commits Made',
+      number: 150,
+      description: 'Collaborating on 150+ Git commits, reflecting our commitment to version control and collaboration.',
     },
     {
-      icon: 'fas fa-trophy',
-      title: 'Award-Winning Achievements',
-      number: 2,
-      description: 'Celebrating 2 prestigious industry awards, our work has been recognized for pushing boundaries and achieving excellence.',
+      icon: 'fas fa-file-code',
+      title: 'Projects Hosted on GitHub',
+      number: 20,
+      description: 'Hosting 20 open-source projects on GitHub, contributing to the developer community.',
     },
+    {
+      icon: 'fas fa-chalkboard-teacher',
+      title: 'Workshops Conducted',
+      number: 20,
+      description: 'Imparting knowledge through 20 educational workshops, empowering the next generation of developers.',
+    },
+    {
+      icon: 'fas fa-comments',
+      title: 'Community Forum Posts',
+      number: 500,
+      description: 'Engaging with our community through 500 forum posts, fostering a supportive developer ecosystem.',
+    },
+  
   ];
 
   return (
     <div className="about-us-container" id="about">
       <h1 className="section-title">About Us</h1>
       <h2>Welcome to LM Square Solutions!</h2>
-      <p className="tagline">Empowering Innovation Through Learning, Making, and Modifying</p>
-
+      <p className="tagline"> Empowering Innovation Through Learning, Making, and Modifying</p>
+      <p align="justify">
+        Bringing over 15+ years of unrivaled expertise, our company is on a mission to redefine excellence
+        in the IT landscape. We strive to provide innovative solutions, leveraging our wealth of experience
+        to propel businesses forward and exceed the expectations of a dynamic and evolving market.
+      </p>   
       <div className="facts-grid">
         {facts.map((fact) => (
           <div className="fact" key={fact.title}>
@@ -50,26 +61,39 @@ const AboutUs = () => {
       </div>
 
       <div className="values-section">
-        <h2>Our Core Values</h2>
-        <ul>
-          <li className="values-list-item">
-            <i className="fas fa-lightbulb"></i>
-            <span>Innovation</span>
-          </li>
-          <li className="values-list-item">
-            <i className="fas fa-shield-alt"></i>
-            <span>Integrity</span>
-          </li>
-          <li className="values-list-item">
-            <i className="fas fa-handshake"></i>
-            <span>Client-Centric Approach</span>
-          </li>
-          <li className="values-list-item">
-            <i className="fas fa-book"></i>
-            <span>Continuous Learning</span>
-          </li>
-        </ul>
-      </div>
+      <h2>Our Core Values</h2>
+      <ul className="values-list">
+        <li className="values-list-item">
+          <i className="fas fa-lightbulb icon"></i>
+          <div className="value-details">
+            <span className="value-title">Innovation</span>
+            <p className="value-description">We foster a culture of creativity and forward-thinking to drive innovation in everything we do.</p>
+          </div>
+        </li>
+        <li className="values-list-item">
+          <i className="fas fa-shield-alt icon"></i>
+          <div className="value-details">
+            <span className="value-title">Integrity</span>
+            <p className="value-description">We uphold the highest standards of integrity, honesty, and ethics in all our interactions and decisions.</p>
+          </div>
+        </li>
+        <li className="values-list-item">
+          <i className="fas fa-handshake icon"></i>
+          <div className="value-details">
+            <span className="value-title">Client-Centric Approach</span>
+            <p className="value-description">Our clients are at the heart of everything we do. We prioritize their needs and deliver solutions with a client-centric focus.</p>
+          </div>
+        </li>
+        <li className="values-list-item">
+          <i className="fas fa-book icon"></i>
+          <div className="value-details">
+            <span className="value-title">Continuous Learning</span>
+            <p className="value-description">We embrace a culture of continuous learning and development, staying updated with the latest industry trends and technologies.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
 
 
       <div className="how-we-work-section bg-gray-100 p-12">
@@ -110,32 +134,40 @@ const AboutUs = () => {
 
 
 
-      <div className="team-section">
-        <h2>Meet Our Team</h2>
-        <p>Our diverse and talented team is the driving force behind our success. Learn more about the individuals who make it all possible.</p>
-        {/* Add team member details here */}
+      <div className="technology-section">
+        <h2>Our Mission</h2>
+        <p>We are on a relentless pursuit of excellence, committed to leveraging our technical expertise to solve challenges and pioneer innovative solutions across diverse domains. Our mission is to provide unparalleled technical solutions that transcend boundaries, making a positive impact on the world.</p>
       </div>
+
       
      
 
       <div className="technology-section">
-        <h2>Our Technology Stack</h2>
-        <ul>
-          <li className="technology-list-item">
-            <i className="fab fa-react"></i>
-            <span>React.js</span>
-          </li>
-          <li className="technology-list-item">
-            <i className="fab fa-node"></i>
-            <span>Node.js</span>
-          </li>
-          <li className="technology-list-item">
-            <i className="fas fa-database"></i>
-            <span>MongoDB</span>
-          </li>
-          {/* Add more technologies as needed */}
-        </ul>
-      </div>
+  <h2>Our Comprehensive Expertise</h2>
+  <p>Our team is proficient in leveraging cutting-edge technologies to deliver innovative solutions. We specialize in:</p>
+  <ul className="technology-list">
+    <li className="technology-list-item">
+      <i className="fas fa-cogs"></i>
+      <span>Custom Solution Development</span>
+    </li>
+    <li className="technology-list-item">
+      <i className="fas fa-chart-line"></i>
+      <span>Scalable Architectures</span>
+    </li>
+    <li className="technology-list-item">
+      <i className="fas fa-cloud"></i>
+      <span>Cloud Computing</span>
+    </li>
+    <li className="technology-list-item">
+      <i className="fas fa-graduation-cap"></i>
+      <span>Educational Training</span>
+    </li>
+    <li className="technology-list-item">
+      <i className="fas fa-handshake"></i>
+      <span>Consultation Services</span>
+    </li>
+  </ul>
+</div>
     </div>
   );
 };

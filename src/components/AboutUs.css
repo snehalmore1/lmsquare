@@ -17,8 +17,10 @@ h2 {
 }
 
 .tagline {
-  color: #666;
+  color: #ff5733;
   font-size: 1.2em;
+  font-family: cursive;
+  font-weight: bold; 
   margin-bottom: 40px;
 }
 
@@ -192,3 +194,36 @@ p {
   background-color: #3498db; /* Connector line color, adjust as needed */
   margin: 0 auto; /* Center the connector line */
 }
+
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.value-details {
+  flex-grow: 1;
+}
+
+.value-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.value-description {
+  color: #666;
+  margin-top: 5px;
+}
+
