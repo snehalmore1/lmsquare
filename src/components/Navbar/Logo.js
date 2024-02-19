@@ -3,7 +3,7 @@ import logo from './logo.png';
 
 function Logo({ src, alt }) {
   return (
-    <img src={logo} alt="client" style={{ width: '50%', height:'50%' }}/>   
+    <img src={logo} alt="client" style={{ width: '30%', height:'auto' }}/>   
   );
 }
 

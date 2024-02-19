@@ -206,27 +206,31 @@ const DemoProduct = (props) => {
                                     <i className="fas fa-map-marker-alt pt-2 pr-2" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h2 className="text-2xl">Office Address</h2>
+                                    <h2 className="text-2xl text-white">Office Address</h2>
                                     <p className="text-gray-400">Rudra Commercials, Kesnand Road, Pune</p>
                                 </div>
                             </div>
                             
                             <div className="flex my-4 w-2/3 lg:w-1/2">
-                                <div className="flex flex-col">
-                                <i className="fas fa-phone-alt pt-2 pr-2" />
-                                </div>
-
-                                <div className="flex flex-col">
-                                    <h2 className="text-2xl">Call Us</h2>
-                                    <p className="text-gray-400">Tel: +919607910411</p>
-                                
-                                    <div className='mt-5'>
-                                        <h2 className="text-2xl">Send an E-mail</h2>
-                                        <p className="text-gray-400">lmsquare.care@gmail.com</p>
+                                    <div className="flex flex-col">
+                                        <i className="fas fa-phone-alt pt-2 pr-2" />
                                     </div>
-                            
+
+                                    <div className="flex flex-col">
+                                        <h2 className="text-3xl text-white">Call Us</h2>
+                                        <p className="text-gray-400">Tel: +91 9607910411</p>
+                                    </div> 
                                 </div>
-                            </div>
+                                <div className="flex my-4 w-2/3 lg:w-1/2">    
+                                    <div className="flex flex-col">
+                                         <i className="fas fa-envelope pt-2 pr-2" />
+                                     </div>
+                                     <div className="flex flex-col">    
+                                            <h2 className="text-3xl text-white">Send an E-mail</h2>
+                                            <p className="text-gray-400">lmsquare.care@gmail.com</p>
+                                       
+                                    </div>
+                                </div>
                             
                             <div className="flex my-4 w-2/3 lg:w-1/2">
                                 <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-blue-900  w-8 mx-1 text-center pt-1">
